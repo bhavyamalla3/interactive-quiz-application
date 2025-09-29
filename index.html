@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Frontend Quiz</title>
+  
+  <!-- Orbitron futuristic font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet" />
+  
+  <!-- Your neon cyber-glow style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top-header">
+    <h1>Quiz Challenge</h1>
+  </header>
+
+  <main>
+    <!-- HOME SCREEN -->
+    <section id="home-screen" class="screen active-screen">
+      <h2>Welcome to My Quiz Challenge!</h2>
+      <button id="start-btn" class="primary-btn">Start Quiz</button>
+    </section>
+
+    <!-- REGISTER SCREEN -->
+    <section id="register-screen" class="screen">
+      <h2>Register to Begin</h2>
+      <form id="register-form" autocomplete="off" novalidate>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <button type="submit" class="primary-btn">Register</button>
+      </form>
+    </section>
+
+    <!-- QUIZ SCREEN -->
+    <section id="quiz-screen" class="screen">
+      <div class="quiz-container">
+        <div id="question" class="question">Question will appear here</div>
+        <div id="answers" class="answers"></div>
+        <button id="next-btn" class="next-btn" style="display:none;">Next</button>
+        <div id="score-section" class="score-section" style="display:none;"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
